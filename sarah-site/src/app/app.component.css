@@ -1,0 +1,115 @@
+
+
+.header {
+    /* padding: 5px; */
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    position: fixed;
+    padding: 50px;
+    left:0px;
+    top:0px;
+}
+.main{
+    margin: 30px;
+}
+
+.head-info{
+    margin:20px;
+    background: lightslategray;
+    padding: 30px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.head-inside {
+        text-align: left;
+    }
+.bookCards{
+    margin-left: 100px;
+    margin:20px;
+    margin-left: 50px;
+    padding: 20px;
+    left:25%;
+    background: lightslategray;
+    border-radius: 2px;
+
+}
+
+
+.bookFilter{
+    position:fixed;
+    background-color: #1abc9c;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 2px;
+
+   
+}
+.marginLarge{
+    margin: 20px;
+    padding: 20px;
+
+
+}
+.filterButton{
+    padding: 8px;
+    background:white;
+    color: darkslategray;
+    margin: 10px;
+    border-radius: 2px;
+    text-align: center;
+
+}
+.home-buttons{
+
+    margin:20px;
+    background: lightslategray;
+    padding: 50px;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+.home-buttons:hover  {
+        background: darkslategray;
+      }
+  
+      /* Create four equal columns that floats next to each other */
+.col-3 {
+    float: left;
+    width: 25%;
+
+  }
+.col-4{
+    float: left;
+    width: 33%;
+}
+.col-6 {
+    float: left;
+    width: 50%;
+    
+  }
+ .col-8{
+    float: left;
+    width: 66%;
+ } 
+.col-9 {
+    float: left;
+    width: 75%;
+  }
+.col-12 {
+      width: 100%;
+      float: left;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
