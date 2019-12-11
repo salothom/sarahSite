@@ -14,6 +14,7 @@
 }
 .main{
     margin: 30px;
+    margin-top:  200px;
 }
 
 .head-info{
@@ -24,12 +25,14 @@
     border-radius: 5px;
     text-align: center;
 }
+
 .head-inside {
         text-align: left;
     }
+
 .bookCards{
-    margin-left: 100px;
-    margin:20px;
+    margin-top: 20px;
+    margin-bottom:40px;
     margin-left: 50px;
     padding: 20px;
     left:25%;
@@ -40,28 +43,35 @@
 
 
 .bookFilter{
-    position:fixed;
+    
+    text-align: center;
+    position:absolute;
     background-color: #1abc9c;
     padding: 20px;
     margin: 20px;
     border-radius: 2px;
-
-   
 }
+
 .marginLarge{
     margin: 20px;
     padding: 20px;
-
-
 }
+
 .filterButton{
+    border: solid;
+    border: 2px solid white;
     padding: 8px;
     background:white;
     color: darkslategray;
     margin: 10px;
     border-radius: 2px;
     text-align: center;
-
+}
+.filterButton:hover{
+    padding: 8px;
+    border: 2px solid lightgray;
+    background:lightgray;
+   
 }
 .home-buttons{
 

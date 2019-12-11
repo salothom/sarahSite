@@ -18,22 +18,19 @@
   </div>
   <div class="row">
     <div>
-      <div class="col-3 bookFilter">
-        <h4> Genre Filter</h4>
-        <div class="filterButton">Mystery</div>
-        <div class="filterButton">Spy Fiction</div>
-        <div class="filterButton">Non-Fiction</div>
-        <div class="filterButton">Science Fiction</div>
-        <div class="filterButton">Novel</div>
-        <div class="filterButton">Short Stories</div>
-        <div class="filterButton">Fantasy</div>
+      <div id="bookFilter" class="col-3 bookFilter">
+        <h3> Genre Filter</h3>
+        <div *ngFor="let genre of genreList">
+          <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}</div>
+        </div>
+        <p>{{filterBy}}</p>
       </div>
     </div>
     <div class="col-4">
       <p class=""> </p>
     </div>
     <div  class="col-8">
-      <div style="left:200px"*ngFor="let book of bookList">
+      <div style="left:200px"*ngFor="let book of filteredList">
         <div class="bookCards">
           <div class="col-3">
             <h2>{{book.number}}</h2>
@@ -42,7 +39,7 @@
             {{book.title}} by {{book.author}}
           </div>
           <div>
-            Genre: {{book.genre}}
+            Genre: {{book.subgenre}}
           </div>
         </div>
       </div>
