@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as musicJson from './music.json';
 
 @Component({
   selector: 'app-music',
@@ -9,7 +10,11 @@ export class MusicComponent implements OnInit {
 
   constructor() { }
 
+  musicList = musicJson.albums;
+
+
   ngOnInit() {
+    console.log(this.musicList);
   }
 
 }

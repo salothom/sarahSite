@@ -1,3 +1,69 @@
-<p>
-  music works!
-</p>
+<div class="main">
+  <div class="head-info" (click)="openBookInfo()">
+    <div>
+      <h1>music</h1>
+    </div>
+    <div class="head-inside" *ngIf="showContent">
+      <p>A personal challenge to listen to at least 150 albums with “fresh ears” and to write snippets of my thoughts
+        when
+        listening to them. The second part came from a desire to have additional excuses to reach out and talk to people
+        who I care about who might not live where I do. This list is compiled from over 30 people. I asked them the
+        simple question: “If you were going to make a list of albums that people should have listened to, what’s a
+        couple albums that would be on your version?”.
+      </p>
+      <p>
+        My mom says that asking what music people should listen to is “kind of like asking what fruit you should eat?
+        Like, just about everything you can get your hands on.”s
+      </p>
+      <p>
+        Below is the list that I got my hands on.
+      </p>
+    </div>
+
+  </div>
+  <div class="row">
+    <div>
+      <div id="bookFilter" class="col-3 bookFilter">
+        <h3> Genre Filter</h3>
+        <!-- <div *ngFor="let genre of genreList">
+          <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}</div>
+        </div> -->
+        <p>hey</p>
+      </div>
+    </div>
+    <div class="col-4">
+      <p class=""> </p>
+    </div>
+    <div class="col-8">
+      <div style="left:200px" *ngFor="let album of musicList">
+        <div class="bookCards">
+          <div class="row">
+            <div class="col-4">
+              <h2>({{album.year}})</h2>
+            </div>
+            <div class="marginTopLarge col-8">
+              <div class="col-12">
+                {{album.album}} - {{album.band}}
+              </div>
+              <div class="col-12">
+                <div> Genre: {{album.genre}}<span *ngIf="album.secondaryGenre">, </span> {{album.secondaryGenre}}</div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div *ngIf="album.quote">
+            {{album.quote}}
+          </div>
+          <div *ngIf="album.review">
+            {{album.review}}
+          </div>
+          <div *ngIf="album.score">
+            {{album.score}}/7
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

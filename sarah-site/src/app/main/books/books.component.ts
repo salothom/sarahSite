@@ -28,9 +28,9 @@ export class BooksComponent implements OnInit {
   }
   getColor(genre){
     if (this.filterBy.indexOf(genre, 0) > -1) {
-      return "2px solid lightslategray";
+      return "4px solid lightslategray";
     }else{
-      return "2px solid white";
+      return "4px solid white";
     }
 
   }

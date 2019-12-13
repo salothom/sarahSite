@@ -54,12 +54,16 @@
 
 .marginLarge{
     margin: 20px;
-    padding: 20px;
+    /* padding: 20px; */
+}
+.marginTopLarge{
+    margin-top: 20px;
+    /* padding: 20px; */
 }
 
 .filterButton{
     border: solid;
-    border: 2px solid white;
+    border: 4px solid white;
     padding: 8px;
     background:white;
     color: darkslategray;
@@ -69,7 +73,7 @@
 }
 .filterButton:hover{
     padding: 8px;
-    border: 2px solid lightgray;
+    border: 4px solid lightgray;
     background:lightgray;
    
 }
@@ -90,9 +94,14 @@
       }
   
       /* Create four equal columns that floats next to each other */
-.col-3 {
+
+.col-1{
     float: left;
     width: 25%;
+}
+.col-3 {
+    float: left;
+    width: 8.3%;
 
   }
 .col-4{
