@@ -18,28 +18,34 @@
   </div>
   <div class="row">
     <div>
-      <div id="bookFilter" class="col-3 bookFilter">
-        <h3> Genre Filter</h3>
-        <div *ngFor="let genre of genreList">
-          <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}</div>
+      <div id="bookFilter" class="col-4 positionAb">
+        <div class="col-9 bookFilter">
+          <h3> Genre Filter</h3>
+          <div *ngFor="let genre of genreList">
+            <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}
+            </div>
+          </div>
+          <p>{{filterBy}}</p>
         </div>
-        <p>{{filterBy}}</p>
+
       </div>
     </div>
     <div class="col-4">
       <p class=""> </p>
     </div>
-    <div  class="col-8">
-      <div style="left:200px"*ngFor="let book of filteredList">
+    <div class="col-8">
+      <div style="left:200px" *ngFor="let book of filteredList">
         <div class="bookCards">
-          <div class="col-3">
-            <h2>{{book.number}}</h2>
-          </div>
-          <div class="col-9">
-            {{book.title}} by {{book.author}}
-          </div>
-          <div>
-            Genre: {{book.subgenre}}
+          <div class="row">
+            <div class="col-3">
+              <h2>{{book.number}}</h2>
+            </div>
+            <div class="col-9 marginTopLarge">
+
+              <div class="">{{book.title}} by {{book.author}}</div>
+              <div>Genre: {{book.subgenre}}</div>
+            </div>
+
           </div>
         </div>
       </div>
