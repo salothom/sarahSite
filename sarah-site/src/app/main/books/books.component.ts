@@ -32,8 +32,8 @@ export class BooksComponent implements OnInit {
     }else{
       return "4px solid white";
     }
-
   }
+
   filterGenre(genrePicked) {
     console.log(genrePicked);
     if (this.filterBy.indexOf(genrePicked, 0) > -1) {
@@ -47,9 +47,7 @@ export class BooksComponent implements OnInit {
       this.filteredList = this.bookList.filter(d => d.genre === this.filterBy[0] ||  d.genre === this.filterBy[1]|| 
       d.genre === this.filterBy[2] || d.genre === this.filterBy[3] ||  d.genre === this.filterBy[4] 
       ||  d.genre === this.filterBy[5] ||  d.genre === this.filterBy[6]);
-    
     }
-    
   }
 
   @HostListener("window:scroll", [])

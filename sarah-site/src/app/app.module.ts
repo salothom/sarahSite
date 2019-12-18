@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { HomeComponent } from './main/home/home.component';
 import { BooksComponent } from './main/books/books.component';
 import { MusicComponent } from './main/music/music.component';
+import { HomeButtonsComponent } from './main/home/home-buttons/home-buttons.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MusicComponent } from './main/music/music.component';
     MainComponent,
     HomeComponent,
     BooksComponent,
-    MusicComponent
+    MusicComponent,
+    HomeButtonsComponent
   ],
   imports: [
     BrowserModule,

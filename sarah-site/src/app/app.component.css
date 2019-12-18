@@ -50,6 +50,10 @@
     border-radius: 2px;
 }
 
+a:link {
+    text-decoration: none;
+  }
+
 .positionAb{
     position: absolute;
 }

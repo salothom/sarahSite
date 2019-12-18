@@ -1,5 +1,5 @@
 <div class="main">
-  <div class="head-info" (click)="openBookInfo()">
+  <div class="head-info" (click)="openMusicInfo()">
     <div>
       <h1>music</h1>
     </div>
@@ -25,21 +25,19 @@
     <div>
       <div id="bookFilter" class="col-4 positionAb">
         <div class="bookFilter col-9">
-           <h3> Genre Filter</h3>
-        <!-- <div *ngFor="let genre of genreList">
-          <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}</div>
-        </div> -->
-        <p>hey</p>
+          <h3>Decade Filter</h3>
+          <div *ngFor="let decade of decadesList">
+            <div (click)="navigateToDecade(decade)"  class="filterButton">{{decade}}</div>
+          </div>
         </div>
-       
       </div>
     </div>
     <div class="col-4">
-      <p class=""> </p>
+      <p class=""></p>
     </div>
     <div class="col-8">
       <div style="left:200px" *ngFor="let album of musicList">
-        <div class="bookCards">
+        <div id={{album.decade}} class="bookCards">
           <div class="row">
             <div class="col-4">
               <h2>({{album.year}})</h2>
