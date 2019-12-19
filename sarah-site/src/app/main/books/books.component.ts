@@ -35,7 +35,7 @@ export class BooksComponent implements OnInit {
   }
 
   filterGenre(genrePicked) {
-    console.log(genrePicked);
+    // console.log(genrePicked);
     if (this.filterBy.indexOf(genrePicked, 0) > -1) {
       this.filterBy.splice(this.filterBy.indexOf(genrePicked, 0), 1);
     } else {
