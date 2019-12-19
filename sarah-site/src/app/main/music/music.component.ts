@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import * as musicJson from './music.json';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,7 +11,7 @@ import {Router} from '@angular/router';
 export class MusicComponent implements OnInit {
 
   constructor(private router: Router) { }
-  decadesList = ["1950s","1960s", "1970s", "1980s", "1990s","2000s","2010s","2020s"];
+  decadesList: { [key: string]: string } = { "1950s": "113", "1960s": "4", "1970s": "58", "1980s": "27", "1990s": "202", "2000s": "110", "2010s": "6", "2020s": "" };
   showContent: boolean = false;
   musicList = musicJson.albums;
 
@@ -29,11 +29,15 @@ export class MusicComponent implements OnInit {
   }
 
   navigateToDecade(decade) {
-    this.router.navigateByUrl('/music#'+decade);
- }
+    console.log(decade);
+    document.getElementById(decade).scrollIntoView();
+  }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
+    // var rect = element.getBoundingClientRect();
+// console.log(rect.top, rect.right, rect.bottom, rect.left);
+    // document.elementFromPoint(x, y);
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     // console.log(number);
     if (number >= 177) {
