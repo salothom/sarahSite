@@ -55,9 +55,9 @@ export class BooksComponent implements OnInit {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     // console.log(number);
-    if (number >= 177) {
+    if (number >= 150) {
       document.getElementById("bookFilter").style.position = "fixed";
-      document.getElementById("bookFilter").style.top = "170px";
+      document.getElementById("bookFilter").style.top = "130px";
       // document.getElementById("bookFilter").style.width = "230px";
 
     } else {
