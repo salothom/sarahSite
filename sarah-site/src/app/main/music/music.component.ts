@@ -49,7 +49,7 @@ export class MusicComponent implements OnInit {
   }
 
   navigateToDecade(decade) {
-    console.log(decade);
+    // console.log(decade);
     document.getElementById(decade).scrollIntoView();
   }
 
@@ -57,7 +57,7 @@ export class MusicComponent implements OnInit {
   onWindowScroll() {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    console.log(number);
+    // console.log(number);
     if (number >= 150) {
       document.getElementById("bookFilter").style.position = "fixed";
       document.getElementById("bookFilter").style.top = "130px";
