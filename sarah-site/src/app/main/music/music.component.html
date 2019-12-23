@@ -19,7 +19,6 @@
         Below is the list that I got my hands on.
       </p>
     </div>
-
   </div>
   <div class="row">
     <div>
@@ -29,7 +28,7 @@
           <input class="search-input" (keyup)="keySearch($event)">
           <h3>Decade Scroll</h3>
           <div *ngFor="let decade of decadesList | keyvalue">
-            <div (click)="navigateToDecade(decade.value)"  class="filterButton">{{decade.key}}</div>
+            <div (click)="navigateToDecade(decade.value)" class="filterButton">{{decade.key}}</div>
           </div>
         </div>
       </div>
