@@ -21,19 +21,20 @@
     </div>
   </div>
   <div class="row">
-    <div>
+    <div class="fullMobile">
       <div id="bookFilter" class="col-4 positionAb">
-        <div class="bookFilter col-9">
+        <div class="bookFilter fullMobile col-9">
           <h3>Search</h3>
           <input class="search-input" (keyup)="keySearch($event)">
           <h3>Decade Scroll</h3>
-          <div *ngFor="let decade of decadesList | keyvalue">
+          <div class="col-m-3 " *ngFor="let decade of decadesList | keyvalue">
             <div (click)="navigateToDecade(decade.value)" class="filterButton">{{decade.key}}</div>
           </div>
+          
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-4-nm">
       <p class=""></p>
     </div>
     <div class="col-8">
