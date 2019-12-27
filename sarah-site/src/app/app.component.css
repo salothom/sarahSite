@@ -1,5 +1,5 @@
 
-
+/* Web Browser */
 .header {
     /* padding: 5px; */
     text-align: left;
@@ -13,14 +13,24 @@
     left:0px;
     top:0px;
 }
+
+.headerText{
+    color:white;
+    text-decoration: none;
+}
+
+.headerText:hover {
+    text-decoration: underline;
+}
+
 .main{
     margin: 30px;
     margin-top:  160px;
 }
 
 .search-input{
-
-  /* width: 100%; */
+  position: center;
+  width: 75%;
   font-size: 16px;
   padding: 12px 20px 12px 20px;
   border: 1px solid lightslategray;
@@ -50,7 +60,6 @@
 }
 
 .bookFilter{
-    
     text-align: center;
     position: absolute;
     background-color: #1abc9c;
@@ -61,7 +70,7 @@
 
 a:link {
     text-decoration: none;
-  }
+}
 
 .positionAb{
     position: absolute;
@@ -71,6 +80,7 @@ a:link {
     margin: 20px;
     /* padding: 20px; */
 }
+
 .marginTopLarge{
     margin-top: 20px;
     /* padding: 20px; */
@@ -86,14 +96,14 @@ a:link {
     border-radius: 2px;
     text-align: center;
 }
+
 .filterButton:hover{
     padding: 8px;
     border: 4px solid lightgray;
     background:lightgray;
-   
 }
-.home-buttons{
 
+.home-buttons{
     margin:20px;
     background: lightslategray;
     padding: 50px;
@@ -101,9 +111,8 @@ a:link {
     border-radius: 5px;
     font-size: 30px;
     text-align: center;
-    
-    
 }
+
 .home-buttons:hover  {
         background: darkslategray;
       }
@@ -114,28 +123,37 @@ a:link {
     float: left;
     width: 25%;
 }
+
 .col-3 {
     float: left;
     width: 8.3%;
-
   }
+
 .col-4{
     float: left;
     width: 33%;
 }
+
+.col-4-nm{
+    float: left;
+    width: 33%;
+}
+
 .col-6 {
     float: left;
     width: 50%;
-    
   }
+
  .col-8{
     float: left;
     width: 66%;
  } 
+
 .col-9 {
     float: left;
     width: 75%;
   }
+
 .col-12 {
       width: 100%;
       float: left;
@@ -146,4 +164,79 @@ a:link {
     content: "";
     display: table;
     clear: both;
+  }
+
+
+  /* mobile version */
+
+@media only screen and (min-width: 416px) and (max-width:800px) {
+    .fullMobile .col-4 {   
+        float: left;
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .col-m-3{
+        float: left;
+        width: 25%;
+    }
+    /* .col-9{
+        float: left;
+        width: 25%;
+    } */
+
+    .col-4-nm{
+        float: left;
+        width:100%;
+    }
+
+    .main{
+        margin: 0px;
+        margin-top:  160px;
+    }
+
+    h3{
+        margin:5px;
+    }
+    .filterButton{
+        margin: 4px;
+        padding: 0px;
+    }
+    .filterButton:hover{
+        padding: 0px;
+        border: 4px solid lightgray;
+        background:lightgray;
+    }
+
+    .bookFilter{
+        padding: 10px;
+    }
+    /* .head-info{
+        width: 100%;
+        margin:20px;
+        background: lightslategray;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+    } */
+    .row-m:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .col-8{
+        float: left;
+        width:100%;
+      }
+}
+
+@media only screen and (max-width: 415px) {
+    .fullMobile .col-4 {
+        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+
+    .col-m-3{
+        float: left;
+        width: 33%;
+    }
   }

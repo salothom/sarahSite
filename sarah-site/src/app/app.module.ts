@@ -9,6 +9,8 @@ import { HomeComponent } from './main/home/home.component';
 import { BooksComponent } from './main/books/books.component';
 import { MusicComponent } from './main/music/music.component';
 import { HomeButtonsComponent } from './main/home/home-buttons/home-buttons.component';
+import { ContactComponent } from './main/contact/contact.component';
+import { TechComponent } from './main/tech/tech.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeButtonsComponent } from './main/home/home-buttons/home-buttons.comp
     HomeComponent,
     BooksComponent,
     MusicComponent,
-    HomeButtonsComponent
+    HomeButtonsComponent,
+    ContactComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,
