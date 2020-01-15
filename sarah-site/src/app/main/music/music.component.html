@@ -21,23 +21,40 @@
     </div>
   </div>
   <div class="row">
-    <div class="fullMobile">
-      <div id="bookFilter" class="col-4 positionAb">
-        <div class="bookFilter fullMobile col-9">
-          <h3>Search</h3>
-          <input class="search-input" (keyup)="keySearch($event)">
+    <div class="fullMobile search-section">
+      <div id="bookFilter" class="col-4-m col-4 positionAb">
+        <div class="bookFilter  col-9">
+          <div class="search-section">
+            <h3>Search</h3>
+            <input class="search-input" (keyup)="keySearch($event)">
+          </div>
+
           <h3>Decade Scroll</h3>
-          <div class="col-m-3 " *ngFor="let decade of decadesList | keyvalue">
+          <div class="col-m-3" *ngFor="let decade of decadesList | keyvalue">
             <div (click)="navigateToDecade(decade.value)" class="filterButton">{{decade.key}}</div>
           </div>
-          
+
         </div>
-      </div>
+      </div> 
     </div>
-    <div class="col-4-nm">
+    <div class="col-4 bookFilter col-4-m">
+      <div class="search-section-hide ">
+        <!-- <div class="bookFilter"> -->
+          <div class="">
+            <h3>Search</h3>
+            <input class="search-input" (keyup)="keySearch($event)">
+          </div>
+
+          <!-- <h3>Decade Scroll</h3> -->
+          <!-- <div class="col-m-3" *ngFor="let decade of decadesList | keyvalue">
+            <div (click)="navigateToDecade(decade.value)" class="filterButton">{{decade.key}}</div>
+          </div> -->
+
+        <!-- </div> -->
+      </div>
       <p class=""></p>
     </div>
-    <div class="col-8">
+    <div class="col-8 mobile-card">
       <div style="left:200px" *ngFor="let album of filteredMusicList">
         <div id={{album.order}} class="bookCards">
           <div class="row">

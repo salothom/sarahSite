@@ -28,8 +28,12 @@
     margin-top:  160px;
 }
 
+.search-section{
+    display: initial;
+}
+
 .search-input{
-  position: center;
+  /* position: center; */
   width: 75%;
   font-size: 16px;
   padding: 12px 20px 12px 20px;
@@ -164,25 +168,36 @@ a:link {
     display: table;
     clear: both;
   }
-
+.search-section-hide {
+    display: none;
+}
 
   /* mobile version */
 
 @media only screen and (min-width: 416px) and (max-width:800px) {
-    .fullMobile .col-4 {   
+    /* .fullMobile .col-4 {   
         float: left;
-        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
+        width:100%; 
+        /* The width is 100%, when the viewport is 800px or smaller */
+     /* } */ 
+
     .col-m-3{
         float: left;
         width: 25%;
     }
+    .search-section{
+        display: none;
+    }
+    .search-section-hide {
+        display: block;
+    }
+
     /* .col-9{
         float: left;
         width: 25%;
     } */
 
-    .col-4-nm{
+    .col-4-m{
         float: left;
         width:100%;
     }
@@ -206,8 +221,12 @@ a:link {
     }
 
     .bookFilter{
-        padding: 10px;
+        margin: 0px;
+   left: 0px;
+        position: fixed;
+        top: 100px;
     }
+    
     /* .head-info{
         width: 100%;
         margin:20px;
@@ -217,23 +236,56 @@ a:link {
         border-radius: 5px;
         text-align: center;
     } */
+
     .row-m:after {
         content: "";
         display: table;
         clear: both;
       }
 
-      .col-8{
+      .bookCards{
+          margin-left: 0px;
+          margin: 20px;
+      }
+      .mobile-card{
+        width:100%;
+    }
+      /* .col-8{
         float: left;
         width:100%;
-      }
+      } */
 }
 
 @media only screen and (max-width: 415px) {
-    .fullMobile .col-4 {
-        width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-      }
+     .col-4-m{
+        float: left;
+        width:100%;
+    }
+    .main{
+        margin: 0px;
+        margin-top:  160px;
+    }
+    .mobile-card{
+        width:100%;
 
+    }
+    .search-section-hide {
+        display: block;
+    }
+    .bookFilter{
+        left: 0px;
+            position: fixed;
+    top: 100px;
+
+    }
+
+    .bookCards{
+        margin-left: 0px;
+    }
+
+  .search-section{
+        display: none;
+    }
     .col-m-3{
         float: left;
         width: 33%;
