@@ -9,7 +9,7 @@ import * as bookJson from './books.json';
 export class BooksComponent implements OnInit {
 
   bookList = bookJson.books;
-  genreList = ["Mystery", "Spy Fiction", "Non-Fiction", "Science Fiction", "Novel", "Short Stories", "Fantasy"];
+  genreList = ["Mystery", "Spy Fiction", "Non-Fiction", "Sci-Fi", "Novel", "Short Stories", "Fantasy"];
   filteredList = bookJson.books;
   showContent: boolean = false;
   filterBy = [];

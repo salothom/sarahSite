@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main main-m">
   <div class="head-info" (click)="openBookInfo()">
     <div>
       <h1>Books and Booze</h1>
@@ -19,9 +19,9 @@
   <div class="row">
     <div>
       <div id="bookFilter" class="col-4 positionAb">
-        <div class="col-9 bookFilter">
-          <h3> Genre Filter</h3>
-          <div *ngFor="let genre of genreList">
+        <div class="col-9 col-4-m bookFilter">
+          <h3 class="search-section"> Genre Filter</h3>
+          <div class="col-m-6 col-mm-3" *ngFor="let genre of genreList">
             <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}
             </div>
           </div>
@@ -30,14 +30,14 @@
 
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-4 col-4-m">
       <p class=""> </p>
     </div>
-    <div class="col-8">
+    <div class="col-8 col-4-m">
       <div style="left:200px" *ngFor="let book of filteredList">
         <div class="bookCards">
           <div class="row">
-            <div class="col-3">
+            <div class="col-3 col-m-3 col-mm-25">
               <h2>{{book.number}}</h2>
             </div>
             <div class="col-9 marginTopLarge">
