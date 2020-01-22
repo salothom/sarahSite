@@ -7,7 +7,7 @@ import { ContactComponent } from './main/contact/contact.component';
 import { TechComponent } from './main/tech/tech.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'music', component: MusicComponent },
   { path: 'books', component: BooksComponent },
