@@ -9,8 +9,9 @@ export class HomeComponent implements OnInit {
 
   // @Input() button: Button;
 
-  buttonList = ["books", "music", "tech", "contact"];
+  buttonList = ["books", "music", "tech"];
   constructor() { }
+  buttonHome = "Contact";
 
   ngOnInit() {
   }
