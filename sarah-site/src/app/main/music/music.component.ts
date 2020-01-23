@@ -23,16 +23,17 @@ export class MusicComponent implements OnInit {
 
   keySearch(event: any) {
 
+    console.log(this.musicList);
     let keyLength = event.target.value.length;
     let wordSearch = event.target.value.toLowerCase()
 
     this.filteredMusicList = this.musicList.filter(d =>
       d.genre.substring(0, keyLength).toLowerCase() === wordSearch ||
+     
       // d.secondaryGenre.substring(0, keyLength).toLowerCase() === wordSearch || 
       // can't do this right now becuase it isn't on every object?
       d.band.substring(0, keyLength).toLowerCase() === wordSearch ||
       d.album.substring(0, keyLength).toLowerCase() === wordSearch);
-
 
   }
 
