@@ -3,7 +3,7 @@
   <div class="row">
     <div>
       <div id="bookFilter" class="col-4 positionFixed">
-        <div class="col-9 col-4-m bookFilter">
+        <div class="col-9 col-4-m search-section bookFilter">
           <h3 class="search-section"> Genre Filter</h3>
           <div class="col-m-6 col-mm-3" *ngFor="let genre of genreList">
             <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="filterButton">{{genre}}

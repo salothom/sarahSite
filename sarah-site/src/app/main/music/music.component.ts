@@ -54,6 +54,17 @@ export class MusicComponent implements OnInit {
     document.getElementById(decade).scrollIntoView();
   }
 
+  toggleSearch($event) {
+    var displaySearch = document.getElementById("mobileSearch").style.display;
+    if (displaySearch == "block"){
+      document.getElementById("mobileSearch").style.display = "none";
+    }
+    else{
+      document.getElementById("mobileSearch").style.display = "block";
+
+    }
+    
+  }
   // @HostListener("window:scroll", [])
   // onWindowScroll() {
   //   const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;

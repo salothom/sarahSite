@@ -1,3 +1,18 @@
+<div class="col-4 search-section-hide col-4-m">
+    <div class="">
+      <div class="row">
+        <div class="searchIcon"id="searchIcon" (click)="toggleSearch($event)">
+          <img style="width: 35px; margin-top: 25px;" src="https://img.icons8.com/pastel-glyph/64/000000/search--v2.png">
+        </div>
+        <div class="mobileSearch" id="mobileSearch"> 
+           <input class="search-input" (keyup)="keySearch($event)">
+        </div>
+       
+      </div>
+
+    </div>
+    <p class=""></p>
+</div>
 <div class="main main-m">
 
   <div class="row">
@@ -10,23 +25,14 @@
           </div>
 
           <h3>Decade Scroll</h3>
-          <div class="col-m-3" *ngFor="let decade of decadesList | keyvalue">
+          <div class="col-m-3 search-section" *ngFor="let decade of decadesList | keyvalue">
             <div (click)="navigateToDecade(decade.value)" class="filterButton">{{decade.key}}</div>
           </div>
 
         </div>
       </div>
     </div>
-    <div class="col-4 search-section-hide bookFilter col-4-m">
-      <div class="">
-        <div class="">
-          <h3>Search</h3>
-          <input class="search-input" (keyup)="keySearch($event)">
-        </div>
-
-      </div>
-      <p class=""></p>
-    </div>
+    
     <div class="col-4  col-4-m">
       <p class=""></p>
     </div>
