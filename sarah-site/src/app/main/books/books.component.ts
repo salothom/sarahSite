@@ -49,24 +49,4 @@ export class BooksComponent implements OnInit {
       ||  d.genre === this.filterBy[5] ||  d.genre === this.filterBy[6]);
     }
   }
-
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-
-    const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    // console.log(number);
-    if (number >= 150) {
-      document.getElementById("bookFilter").style.position = "fixed";
-      document.getElementById("bookFilter").style.top = "130px";
-      // document.getElementById("bookFilter").style.width = "230px";
-
-    } else {
-      document.getElementById("bookFilter").style.position = "absolute";
-      document.getElementById("bookFilter").style.top = "";
-
-      // document.getElementById("bookFilter").style.width = "230px";
-
-    }
-
-  }
 }
