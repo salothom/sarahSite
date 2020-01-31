@@ -10,7 +10,7 @@
     font-family: Tahoma, Geneva, sans-serif; 
     position: fixed;
     padding: 10px;
-    padding-left: 50px;
+    padding-left: 10px;
     padding-bottom: 0px;
     left:0px;
     top:0px;
@@ -25,6 +25,7 @@
 
 .navbar {
     overflow: hidden;
+    margin-bottom: 15px;
   }
   
 .navbar a {
@@ -66,7 +67,7 @@
 
   
 .navbar .dropbtn .dropdown:hover  {
-    background-color: lightslategray;
+    background-color: #778899;
   }
 
 
@@ -276,9 +277,11 @@ a:link {
 .mobileSearch {
     position: fixed;
     display: none;
-    width: 100%;
+    width: 75%;
     margin-left: 5%;
     padding: 3px;
+    top: 12px;
+    margin-left: 55px;
 }
 
   /* mobile version */
@@ -371,7 +374,7 @@ a:link {
         width:100%;
       } */
       .main-m{
-        margin-top: 0px;
+        margin-top:35px;
     }
 }
 
@@ -402,7 +405,7 @@ a:link {
     
     .main-m{
         margin: 0px;
-        margin-top: 0px;
+        margin-top: 35px;
     }
     .mobile-card{
         width:100%;
