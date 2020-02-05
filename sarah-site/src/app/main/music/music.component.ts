@@ -13,7 +13,7 @@ export class MusicComponent implements OnInit {
 
   constructor(private router: Router) { }
   decadesList: { [key: string]: string } = { "1960s": "4", "1970s": "58", "1980s": "27", "1990s": "202", "2000s": "110", "2010s": "6" };
-  showContent: boolean = false;//"1950s": "113",  removing this for now?
+  showContent: boolean = true;//"1950s": "113",  removing this for now?
   musicList = musicJson.albums;
   filteredMusicList = musicJson.albums;
   filterBy = [];

@@ -11,7 +11,7 @@ export class BooksComponent implements OnInit {
   bookList = bookJson.books;
   genreList = ["Mystery", "Spy Fiction", "Non-Fiction", "Sci-Fi", "Novel", "Short Stories", "Fantasy"];
   filteredList = bookJson.books;
-  showContent: boolean = false;
+  showContent: boolean = true;
   filterBy = [];
   constructor() { }
 
