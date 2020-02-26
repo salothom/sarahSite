@@ -4,8 +4,12 @@
             "title": "Hard-Boiled Wonderland and the End of the World",
             "author": "Haruki Murakami",
             "year": "2017",
-            "genre":"Science Fiction",
-            "subgenre": "Speculative Fiction, Science Fiction",
+            "pages": "400",
+            "published": "1985",
+            "genre": [
+                "Speculative Fiction",
+                "Science Fiction"
+            ],
             "number": "1",
             "selector": "Sarah Thompson"
         },
@@ -14,8 +18,14 @@
             "author": "Saul Black",
             "year": "2017",
             "number": "2",
-            "genre":"Mystery",
-            "subgenre": "Mystery, Murder Mystery",
+            "pages": "400",
+            "published": "2015",
+            "genre": [
+                "Novel",
+                "Mystery",
+                "Thriller",
+                "True Crime"
+            ],
             "selector": "Kassidy Hulen"
         },
         {
@@ -23,8 +33,12 @@
             "author": "Jonas Jonasson",
             "year": "2017",
             "number": "3",
-            "genre": "Novel",
-            "subgenre": "Novel, Adventure, Comedy Fiction",
+            "pages": "396",
+            "published": "2009",
+            "genre": [
+                "Adventure",
+                "Comedy Fiction"
+            ],
             "selector": "Emily Hiler"
         },
         {
@@ -32,17 +46,25 @@
             "author": "Joseph Conrad",
             "year": "2017",
             "number": "4",
-            "genre":"Spy Fiction",
-            "subgenre": "Spy Fiction",
+            "pages": "304",
+            "published": "1907",
+            "genre": [
+                "Spy Fiction",
+                "Novel"
+            ],
             "selector": "Caleb Upson"
         },
         {
-            "title": "Boomerang",
+            "title": "Boomerang: Travels in the New Third World",
             "author": "Michael Lewis",
             "year": "2017",
             "number": "5",
-            "genre": "Non-Fiction",
-            "subgenre": "Non-Fiction, Finance Lit",
+            "pages": "218",
+            "published": "2011",
+            "genre": [
+                "Non-Fiction",
+                "Economics"             
+            ],
             "selector": "Luke Thomas"
         },
         {
@@ -50,26 +72,39 @@
             "author": "Kurt Vonnugut",
             "year": "2018",
             "number": "6",
-            "genre": "Short Stories",
-            "subgenre": "Short Stories, Comdey Fiction",
+            "pages": "331",
+            "published": "1968",
+            "genre": [
+                "Short Stories",
+                "Comedy Fiction"
+            ],
             "selector": "Sarah Thompson"
         },
         {
             "title": "Modern Romance",
             "author": "Aziz Anzari",
-            "year": "2018",
+            "year": "201",
             "number": "7",
-            "subgenre": "Non-Fiction",
-            "genre": "Non-Fiction",
+            "pages": "279",
+            "published": "2015",
+            "genre": [
+                "Non-Fiction",
+                "Humor"
+            ],
             "selector": "Maggie Wolff"
         },
         {
-            "title": "Snowcrash",
+            "title": "Snow Crash",
             "author": "Neal Stephenson",
             "year": "2018",
             "number": "8",
-            "genre": "Science Fiction",
-            "subgenre": "Cyber Punk, Science Fiction",
+            "pages": "559",
+            "published": "1992",
+            "genre": [
+                "Cyber Punk",
+                "Science Fiction",
+                "Technology"
+            ],
             "selector": "Ben Sullivan"
         },
         {
@@ -77,8 +112,11 @@
             "author": "Lily King",
             "year": "2018",
             "number": "9",
-            "genre": "Novel",
-            "subgenre": "Novel, Historical Fiction",
+            "pages": "256",
+            "published": "2014",
+            "genre": [
+                "Historical Fiction"
+            ],
             "selector": "Charmecia Morris"
         },
         {
@@ -86,8 +124,12 @@
             "author": "Alexander Weinstein",
             "year": "2018",
             "number": "10",
-            "genre": "Short Stories",
-            "subgenre": "Short Stories, Science Fiction",
+            "pages": "229",
+            "published": "2016",
+            "genre": [
+                "Short Stories",
+                "Science Fiction"
+            ],
             "selector": "David Garcia"
         },
         {
@@ -95,8 +137,13 @@
             "author": "Randall Munroe",
             "year": "2018",
             "number": "11",
-            "genre": "Non-Fictin",
-            "subgenre": "Non-Fiction, Comedic Essays",
+            "pages": "303",
+            "published": "2014",
+            "genre": [
+                "Non-Fiction",
+                "Humor",
+                "Short Stories"
+            ],
             "selector": "Tim Cavell"
         },
         {
@@ -104,8 +151,12 @@
             "author": "Arthur C. Clarke",
             "year": "2018",
             "number": "12",
-            "genre": "Science Fiction",
-            "subgenre": "Science Fiction",
+            "pages": "224",
+            "published": "1953",
+            "genre": [
+                "Science Fiction",
+                "Apocalyptic Literature"
+            ],
             "selector": "Tyler Wiethorn"
         },
         {
@@ -113,8 +164,13 @@
             "author": "Gail Honeyman",
             "year": "2018",
             "number": "13",
-            "genre": "Novel",
-            "subgenre": "Novel, Contemporary Romance",
+            "pages": "336",
+
+            "published": "2017",
+            "genre": [
+                "Romance Novel",
+                "Contemporary Romance"
+            ],
             "selector": "Emily Hiler"
         },
         {
@@ -122,8 +178,13 @@
             "author": "Megan Abbott",
             "year": "2018",
             "number": "14",
-            "genre": "Mystery",
-            "subgenre": "Mystery, Psychological Thriller",
+            "pages": "352",
+            "published": "2018",
+            "genre": [
+                "Thriller",
+                "Suspense",
+                "Psychological Thriller"
+            ],
             "selector": "Maggie Wolff"
         },
         {
@@ -131,8 +192,12 @@
             "author": "Kate Quinn",
             "year": "2018",
             "number": "15",
-            "genre": "Spy Fiction",
-            "subgenre": "Spy Fiction",
+            "pages": "503",
+            "published": "2017",
+            "genre": [
+                "Spy Fiction",
+                "Historical Fiction"
+            ],
             "selector": "Sarah Parzyck"
         },
         {
@@ -140,8 +205,12 @@
             "author": "Hans Christian Andersen",
             "year": "2018",
             "number": "16",
-            "genre": "Short Stories",
-            "subgenre": "Short Story, Holiday",
+            "pages": "36",
+            "published": "1844",
+            "genre": [
+                "Short Stories",
+                "Holiday"
+            ],
             "selector": "Tim Cavell"
         },
         {
@@ -149,8 +218,13 @@
             "author": "Tim Wu",
             "year": "2019",
             "number": "17",
-            "genre": "Non-Fiction",
-            "subgenre": "Non-Fiction, Technology",
+            "pages": "154",
+            "published": "2018",
+            "genre": [
+                "Non-Fiction",
+                "Technology",
+                "Ecomonics"
+            ],
             "selector": "Ben Sullivan"
         },
         {
@@ -158,8 +232,13 @@
             "author": "Simon Rich",
             "year": "2019",
             "number": "18",
-            "genre": "Short Stories",
-            "subgenre": "Short Stories, Comedy",
+            "pages": "213",
+            "published": "2013",
+            "genre": [
+                "Romance Novel",
+                "Short Stories",
+                "Comedy Fiction"
+            ],
             "selector": "Caleb Upson"
         },
         {
@@ -167,8 +246,13 @@
             "author": "Erik Larson",
             "year": "2019",
             "number": "19",
-            "genre": "Non-Fiction",
-            "subgenre": "Non-Fiction, Biography, True Crime",
+            "pages": "447",
+            "published": "2002",
+            "genre": [
+                "Biography",
+                "Historical Fiction",
+                "True Crime"
+            ],
             "selector": "Sarah Thompson"
         },
         {
@@ -176,8 +260,11 @@
             "author": "David Eddings",
             "year": "2019",
             "number": "20",
-            "genre": "Fantasy",
-            "subgenre": "Fantasy",
+            "pages": "736",
+            "published": "1995",
+            "genre": [
+                "Fantasy"
+            ],
             "selector": "Hayley Buffkin"
         },
         {
@@ -185,8 +272,13 @@
             "author": "Catherine Steadman",
             "year": "2019",
             "number": "21",
-            "genre": "Mystery",
-            "subgenre": "Mystery, Psychological Thriller",
+            "pages": "342",
+            "published": "2018",
+            "genre": [
+                "Thriller",
+                "Suspense",
+                "Psychological Thriller"
+            ],
             "selector": "Maggie Wolff"
         },
         {
@@ -194,8 +286,12 @@
             "author": "Celeste Ng",
             "year": "2019",
             "number": "22",
-            "genre": "Novel",
-            "subgenre": "Novel, Domestic Fiction",
+            "pages": "338",
+            "published": "2017",
+            "genre": [
+                "Novel",
+                "Domestic Fiction"
+            ],
             "selector": "Allison Cleere"
         },
         {
@@ -203,8 +299,12 @@
             "author": "Carlo Rovelli",
             "year": "2019",
             "number": "23",
-            "genre": "Non-Fiction",
-            "subgenre": "Non-Fiction, Science",
+            "pages": "240",
+            "published": "2017",
+            "genre": [
+                "Science",
+                "Non-Fiction"
+            ],
             "selector": "Charles B"
         },
         {
@@ -212,8 +312,12 @@
             "author": "Lauren Wilkinson",
             "year": "2019",
             "number": "24",
-            "genre": "Spy Fiction",
-            "subgenre": "Spy Fiction",
+            "pages": "292",
+            "published": "2019",
+            "genre": [
+                "Spy Fiction",
+                "Historical Fiction"
+            ],
             "selector": "Cody Bowlay"
         },
         {
@@ -221,27 +325,67 @@
             "author": "China Miéville",
             "year": "2019",
             "number": "25",
-            "genre": "Science Fiction",
-            "subgenre": "Mystery, Science Fiction",
+            "pages": "312",
+            "published": "2009",
+            "genre": [
+                "Science Fiction",
+                "Mystery",
+                "True Crime"
+            ],
             "selector": "Sarah Thompson"
         },
         {
             "title": "The Secrets We Kept",
-            "author": "LAra Prescott",
+            "author": "Lara Prescott",
             "year": "2019",
             "number": "26",
-            "genre": "Spy Fiction",
-            "subgenre": "Spy Fiction",
+            "pages": "368",
+            "published": "2019",
+            "genre": [
+                "Thriller",
+                "Historical Fiction",
+                "Spy Fiction"
+            ],
             "selector": "Maggie Wolff"
         },
         {
-            "title": "Walking Through Anger: A New Design for Conforonting Conflict in an emotionally Charged World",
+            "title": "Walking Through Anger: A New Design for Conforonting Conflict in an Emotionally Charged World",
             "author": "Christian Conte",
             "year": "2019",
             "number": "27",
-            "genre": "Non-Fiction",
-            "subgenre": "Non-Fiction",
+            "pages": "232",
+            "published": "2019",
+            "genre": [
+                "Self Improvment"
+            ],
             "selector": "Caleb Upson"
+        },
+        {
+            "title": "Marfa: The Transformation of a West Texas Town",
+            "author": "Kathleen Shafer",
+            "year": "2020",
+            "number": "28",
+            "pages": "204",
+            "published": "2017",
+            "genre": [
+                "Non-Fiction",
+                "Art",
+                "Travel"
+            ],
+            "selector": "Ben Sullivan"
+        },
+        {
+            "title": "The Weight of Our Sky",
+            "author": "Hanna Alkaf",
+            "year": "2020",
+            "number": "29",
+            "pages": "288",
+            "published": "2019",
+            "genre": [
+                "Young Adult",
+                "Historical Fiction"
+            ],
+            "selector": "Tim Cavell"
         }
     ]
 }

@@ -1,231 +1,44 @@
 
 /* Web Browser */
-.header {
-    /* padding: 5px; */
-    text-align: left;
-    background: #1abc9c;
-    color: white;
-    width: 100%;
-    font-size: 20px;
-    font-family: Tahoma, Geneva, sans-serif; 
-    position: fixed;
-    padding: 10px;
-    padding-left: 10px;
-    padding-bottom: 0px;
-    left:0px;
-    top:0px;
-}
 
 
-.headerText{
-    color:white;
-    text-decoration: none;
-}
-
-
-.navbar {
-    overflow: hidden;
-    margin-bottom: 15px;
-  }
-  
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
+.left-container{
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-.dropdown {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px 0px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+    padding: 30px;
+    height: 100vh;
+    background-color: antiquewhite;
+    position: fixed;
+}
+.right-container{
+    padding: 30px;
+    margin-left: 40%;
 }
 
-.dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 0px 16px 10px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    text-decoration: none;
-  }
-
-  
-.navbar .dropbtn .dropdown:hover  {
-    background-color: #778899;
-  }
+.right-cards{
+    margin-top:15px;
+}
 
 
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 3;
-  }
-  
-.dropdown-content a {
-    float: none;
+.home-links{
+    padding: 7px;
+    font-size: large;
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-.dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
-.main{
-    margin: 30px;
-    margin-top:  80px;
-    font-family: Tahoma, Geneva, sans-serif; 
-
-}
-
-.search-section{
-    display: initial;
-}
-
-.search-input{
-  width: 75%;
-  font-size: 16px;
-  padding: 12px 20px 12px 20px;
-  border: 1px solid lightslategray;
-}
-
-.head-info{
-    margin:20px;
-    margin-left: 47px;
-    background: lightslategray;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-}
-
-.head-inside {
-        text-align: left;
-    }
-
-.bookCards{
-    margin-top: 20px;
-    margin-bottom:40px;
-    margin-left: 50px;
-    padding: 20px;
-    left:25%;
-    background: lightslategray;
-    border-radius: 2px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-}
-
-.burger{
-    text-decoration: none;
-}
-
-.bookFilter{
-    text-align: center;
-    position: sticky;
-    z-index: 2;
-    background-color: #1abc9c;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 2px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
-}
-
-.positionFixed{
-
-    position: fixed;
-    z-index: 2;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-
-
-.marginLarge{
-    margin: 20px;
-    /* padding: 20px; */
-}
-
-.marginTopLarge{
-    margin-top: 20px;
-    /* padding: 20px; */
-}
-
-.filterButton{
-    border: solid;
-    border: 4px solid white;
-    padding: 8px;
-    background:white;
-    color: darkslategray;
-    margin: 10px;
-    border-radius: 2px;
-    text-align: center;
-}
-
-.filterButton:hover{
-    padding: 8px;
-    border: 4px solid lightgray;
-    background:lightgray;
-}
-
-.home-buttons{
-    margin:20px;
-    background: lightslategray;
-    padding: 50px;
-    color: white;
-    border-radius: 5px;
-    font-size: 30px;
-    text-align: center;
+    font-variant: all-petite-caps;
     text-decoration: none;
 }    
 
 
-.home-buttons:hover  {
+.home-links:hover  {
     text-decoration: underline;
-    background: slategray;
-      }
+    
+}
       /* Create four equal columns that floats next to each other */
 
-.col-1{
-    float: left;
-    width: 25%;
-}
+
 
 .col-3 {
     float: left;
-    width: 8.3%;
+    width: 25%;
   }
 
 .col-4{
@@ -233,10 +46,6 @@ a:link {
     width: 33%;
 }
 
-.col-4-nm{
-    float: left;
-    width: 33%;
-}
 
 .col-6 {
     float: left;
@@ -264,15 +73,7 @@ a:link {
     display: table;
     clear: both;
   }
-.search-section-hide {
-    display: none;
-}
-
-.searchIcon{
-    top: 0px;
-    right: 15px;
-    position: fixed;
-}
+  
 .mobileSearch {
     position: fixed;
     display: none;
@@ -282,13 +83,20 @@ a:link {
     top: 12px;
     margin-left: 55px;
 }
+.tablet-hide{
+    display: unset;
+}
+.mobile-hide{
+    display: unset;
+}
 
   /* mobile version */
 
 @media only screen and (min-width: 416px) and (max-width:800px) {
 
-    .burger{
-        padding: 5px;
+    .col-m-12{
+        float: left;
+        width:100%;
     }
     .col-m-6{
         float: left;
@@ -299,162 +107,17 @@ a:link {
         float: left;
         width: 25%;
     }
-    .search-section{
+    .tablet-hide{
         display: none;
     }
-    .search-section-hide {
-        display: block;
-    }
-
-    .home-buttons{
-
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .home-buttons h2 {
-        margin: 10px;
-    }
-
-    .col-4-m{
-        float: left;
-        width:100%;
-    }
-
-    .main{
-        margin: 0px;
-        margin-top:  160px;
-    }
-
-    h3{
-        margin:5px;
-    }
-    .filterButton{
-        
-        margin: 3px;
-        padding: 0px;
-    }
-
-    .filterButton:hover{
-        padding: 0px;
-        border: 4px solid lightgray;
-        background:lightgray;
-    }
-
-    .bookFilter{
-        margin: 0px;
-        left: 0px;
-        position: sticky;
-        z-index: 2;
-        top: 75px;
-        padding: 0px;
-
-    }
-
-    .head-info{
-        margin-left: 0px;
-    }
-
-    .row-m:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      .bookCards{
-          margin-left: 0px;
-          margin: 20px;
-      }
-      .mobile-card{
-        width:100%;
-    }
-      /* .col-8{
-        float: left;
-        width:100%;
-      } */
-      .main-m{
-        margin-top:35px;
+    .mobile-hide{
+        display: unset;
     }
 }
 
 @media only screen and (max-width: 415px) {
-    .burger{
-        padding: 5px;
-    }
-    .head-info{
-        margin-left: 0px;
-    }
-
-    .filterButton{
-        
-        margin: 3px;
-        padding: 0px;
-    }
-
-    .filterButton:hover{
-        padding: 0px;
-        border: 4px solid lightgray;
-        background:lightgray;
-    }
-
-     .col-4-m{
-        float: left;
-        width:100%;
-    }
     
-    .main-m{
-        margin: 0px;
-        margin-top: 35px;
-    }
-    .mobile-card{
-        width:100%;
-
-    }
-    .search-section-hide {
-        display: block;
-    }
-    .bookFilter{
-        left: 0px;
-        position: sticky;
-        top: 75px;
-        padding: 0px;
-        margin: 0px;
-        z-index: 2;
-
-    }
-
-    .bookFilter h3{
-        margin: 10px;
-    }
-
-    .home-buttons{
-
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .home-buttons h2 {
-        margin: 10px;
-    }
-    .bookCards{
-        margin-left: 0px;
-    }
-
-  .search-section{
+    .mobile-hide{
         display: none;
-    }
-    .col-m-3{
-        float: left;
-        width: 33%;
-    }
-
-    .col-mm-25{
-        float: left;
-        width: 25%;
-    }
-
-    .col-mm-3{
-        float: left;
-        width: 33%;
     }
   }

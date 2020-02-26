@@ -1,16 +1,81 @@
-<div class="main main-m">
-  <div *ngFor="let buttonName of buttonList">
-    <div class="col-1 col-4-m">
-      <a href={{buttonName}}>
-        <app-home-buttons [buttonName]="buttonName"></app-home-buttons>
-      </a>
+<div>
+  <div class="col-4 left-container">
+    <div>
+      <h1>Hello! I'm Sarah.</h1>
     </div>
-  </div>
-  <div class="col-1 col-4-m">
-    <a href="https://sarahloisthompson.com">
-      <div class="home-buttons">
-        <h2>{{buttonHome | titlecase}}</h2>
+    <div class="row">
+      <a (click)="updateView('About')" class="home-links">About</a>
+      <a (click)="updateView('Music')" class="home-links">Music</a>
+      <a (click)="updateView('Books')" class="home-links">Books</a>
+      <a href="http://sarahloisthompson.com/react-site/" class="home-links">React Site</a>
+      <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank" class="home-links">Linkedin</a>
+    </div>
+    <div style="text-align: left; margin-top: 40px;">
+      <div *ngIf="mainShow==='About'">
+        I am a software developer living in Austin, Texas. Originally from the Chicago 'burbs, I got my undergrad from
+        Indiana University's School of Infromatics and Computer Science then headed down to warmer weather. Check out
+        the books I've been reading or see the list of albums I'm attempting to work my way through this year. If you
+        have any reccomendations on either, I'd truly love to hear them.
       </div>
-    </a>
+      <div *ngIf="mainShow==='Books'">
+        <p>Established in 2017, Books & Booze is a community book club located in Austin, Texas.
+          Founded with the idea to have great conversations about books we wouldn't nessisarily pick up by ourselves,
+          this book club has lead its members through story lines and to many different local coffee shops,
+          breweries, and patios. With monthly meetings, and a sprawling range of genres, there is only one rule of the
+          club</p>
+        <ol>
+          <li>No books where the dog dies</li>
+        </ol>
+      </div>
+      <div *ngIf="mainShow==='Music'">
+        <p>This list comes from personal challenge to listen to at least 150 albums in 2020 with “fresh ears”, to maybe
+          write snippets of my
+          thoughts when listening to them, and to score them out of 7. This in part came from a desire to not only have
+          additional excuses to reach out and talk to
+          people whom I care about, but also to expand the genres and albums I listen to on a daily bases. This list is
+          compiled from over 30 people. I asked them
+          the
+          simple question: “If you were going to make a list of albums that people should have listened to, what’s a
+          couple albums that would be on your version?”.
+        </p>
+        <div>
+          <input class="" (keyup)="keySearch($event)">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-6 right-container">
+    <div *ngIf="mainShow==='Books'">
+      <app-books></app-books>
+    </div>
+    <div *ngIf="mainShow==='Music'">
+
+      <div *ngFor="let album of filteredMusicList">
+        <div id={{album.order}} class="right-cards ">
+
+
+          <h4 style="text-align: center;" class="col-12">
+            {{album.album}} - {{album.band}}
+          </h4>
+          <div class="col-12">
+            <div> Genre: {{album.genre}}<span *ngIf="album.secondaryGenre">, </span> {{album.secondaryGenre}}</div>
+
+            <div>Released in year {{album.year}}</div>
+            <div *ngIf="album.quote">
+              Song Quote: {{album.quote}}
+            </div>
+            <div *ngIf="album.review">
+              {{album.review}}
+            </div>
+            <div *ngIf="album.score">
+              Score: {{album.score}}/7
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>

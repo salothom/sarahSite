@@ -16,6 +16,7 @@ export class BooksComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
   openBookInfo() {
 
@@ -26,6 +27,7 @@ export class BooksComponent implements OnInit {
       this.showContent = true;
     }
   }
+
   getColor(genre){
     if (this.filterBy.indexOf(genre, 0) > -1) {
       return "4px solid lightslategray";
