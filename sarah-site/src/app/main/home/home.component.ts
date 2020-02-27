@@ -26,26 +26,26 @@ export class HomeComponent implements OnInit {
   filteredList = bookJson.books;
   filterByBooks = [];
   totalScored: number;
-  toggleMobile: boolean= false;
+  toggleMobile: boolean = false;
 
   ngOnInit() {
     this.countReviewed();
   }
 
-  countReviewed(){
-    this.totalScored = this.musicList.filter(function(value) { return value.score }).length;
+  countReviewed() {
+    this.totalScored = this.musicList.filter(function (value) { return value.score }).length;
   }
 
-  mobileMenu(){
-    if(this.toggleMobile){
+  mobileMenu() {
+    if (this.toggleMobile) {
       document.getElementById("mobileNav").style.width = "0%";
       this.toggleMobile = false;
 
-    }else{
+    } else {
       document.getElementById("mobileNav").style.width = "50%";
       this.toggleMobile = true;
     }
-    
+
 
   }
 
@@ -67,35 +67,40 @@ export class HomeComponent implements OnInit {
 
 
   filterGenre(genrePicked) {
-    
-    if (this.filterByBooks.indexOf(genrePicked, 0) > -1) {
-      this.filterByBooks.splice(this.filterByBooks.indexOf(genrePicked, 0), 1);
+    if (genrePicked === "clear") {
+      this.filterByBooks = [];
     } else {
-      this.filterByBooks.push(genrePicked);
+      if (this.filterByBooks.indexOf(genrePicked, 0) > -1) {
+        this.filterByBooks.splice(this.filterByBooks.indexOf(genrePicked, 0), 1);
+      } else {
+        this.filterByBooks.push(genrePicked);
+      }
     }
-    console.log(this.filterByBooks);
-    if(this.filterByBooks.length < 1){
+    if (this.filterByBooks.length < 1) {
       this.filteredList = this.bookList;
-    }else{
-      this.filteredList = this.bookList.filter(d => {for(let gen of d.genre){
-        if( this.filterByBooks.indexOf(gen) >= 0 ){
-          return true;
+    } else {
+      this.filteredList = this.bookList.filter(d => {
+        for (let gen of d.genre) {
+          if (this.filterByBooks.indexOf(gen) >= 0) {
+            return true;
+          }
         }
-      }});
+      });
 
     }
+
   }
 
-  getColor(genre){
+  getColor(genre) {
     if (this.filterBy.indexOf(genre, 0) > -1) {
       return "4px solid lightslategray";
-    }else{
+    } else {
       return "4px solid white";
     }
   }
 
 
-  updateView(view){
+  updateView(view) {
     this.mainShow = view;
     this.mobileMenu();
   }
