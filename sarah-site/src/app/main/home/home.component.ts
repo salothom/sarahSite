@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as musicJson from './music.json';
+import * as bookJson from './books.json';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +13,20 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   mainShow = "About";
+
+  //music
   showContent: boolean = true;//"1950s": "113",  removing this for now?
   musicList = musicJson.albums;
   filteredMusicList = musicJson.albums;
   filterBy = [];
+
+  //books
+  bookList = bookJson.books;
+  genreList = ["Spy Fiction", "Non-Fiction", "Science Fiction", "Novel", "Short Stories", "Economics", "True Crime", "Fantasy"];
+  filteredList = bookJson.books;
+  filterByBooks = [];
   totalScored: number;
+  toggleMobile: boolean= false;
 
   ngOnInit() {
     this.countReviewed();
@@ -24,6 +34,19 @@ export class HomeComponent implements OnInit {
 
   countReviewed(){
     this.totalScored = this.musicList.filter(function(value) { return value.score }).length;
+  }
+
+  mobileMenu(){
+    if(this.toggleMobile){
+      document.getElementById("mobileNav").style.width = "0%";
+      this.toggleMobile = false;
+
+    }else{
+      document.getElementById("mobileNav").style.width = "50%";
+      this.toggleMobile = true;
+    }
+    
+
   }
 
   keySearch(event: any) {
@@ -42,9 +65,39 @@ export class HomeComponent implements OnInit {
 
   }
 
+
+  filterGenre(genrePicked) {
+    
+    if (this.filterByBooks.indexOf(genrePicked, 0) > -1) {
+      this.filterByBooks.splice(this.filterByBooks.indexOf(genrePicked, 0), 1);
+    } else {
+      this.filterByBooks.push(genrePicked);
+    }
+    console.log(this.filterByBooks);
+    if(this.filterByBooks.length < 1){
+      this.filteredList = this.bookList;
+    }else{
+      this.filteredList = this.bookList.filter(d => {for(let gen of d.genre){
+        if( this.filterByBooks.indexOf(gen) >= 0 ){
+          return true;
+        }
+      }});
+
+    }
+  }
+
+  getColor(genre){
+    if (this.filterBy.indexOf(genre, 0) > -1) {
+      return "4px solid lightslategray";
+    }else{
+      return "4px solid white";
+    }
+  }
+
+
   updateView(view){
     this.mainShow = view;
-    console.log(view);
+    this.mobileMenu();
   }
 
 }

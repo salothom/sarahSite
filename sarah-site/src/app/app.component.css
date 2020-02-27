@@ -8,6 +8,12 @@
     height: 100vh;
     background-color: antiquewhite;
     position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.left-container-sub{
+    text-align: left;
+     margin-top: 40px;
 }
 .right-container{
     padding: 30px;
@@ -15,7 +21,29 @@
 }
 
 .right-cards{
-    margin-top:15px;
+    margin-top:25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+}
+
+.mobile-menu{
+    height: 30px; 
+    padding: 5px;
+}
+
+.mobile-submenu{
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    width: 0%;
+    height: 100vh;
+    background-color: lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+   
+    margin-top: 8px;
+}
+.mobile-submenu-box{
+    padding: 15px;
 }
 
 
@@ -25,12 +53,22 @@
     color: black;
     font-variant: all-petite-caps;
     text-decoration: none;
+    transition: 0.3s;
 }    
-
 
 .home-links:hover  {
     text-decoration: underline;
     
+}
+
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
+.align-left{
+    text-align: left;
 }
       /* Create four equal columns that floats next to each other */
 
@@ -66,6 +104,14 @@
       width: 100%;
       float: left;
   }
+.col-6-mobile{
+    width: 100%;
+    float: left;
+}
+.col-12-mobile{
+    width: 50%;
+    float: left;
+}
   
   /* Clear floats after the columns */
 .row:after {
@@ -83,41 +129,51 @@
     top: 12px;
     margin-left: 55px;
 }
-.tablet-hide{
-    display: unset;
+.desktop-hide{
+    display: none;
 }
 .mobile-hide{
     display: unset;
 }
 
-  /* mobile version */
+  
 
-@media only screen and (min-width: 416px) and (max-width:800px) {
+@media only screen and (max-width: 615px) {
 
-    .col-m-12{
-        float: left;
-        width:100%;
+
+    .left-container{
+        text-align: left;
+        padding: 10px;
+        width: 100vw;
+        height: 6%;
+        top: 0px;
+        left: 0px;
+
     }
-    .col-m-6{
-        float: left;
-        width: 50%;
+    .right-container{
+        margin-left: 0%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
-    .col-m-3{
-        float: left;
-        width: 25%;
+    h1{
+        font-size: x-large;
+        margin-top: 8px;
     }
-    .tablet-hide{
-        display: none;
-    }
-    .mobile-hide{
+    .desktop-hide{
         display: unset;
     }
-}
-
-@media only screen and (max-width: 415px) {
-    
     .mobile-hide{
         display: none;
+    }
+
+    .col-12-mobile{
+        width: 90%;
+        float: left;
+    }
+
+    .col-6-mobile{
+        width: 50%;
+        float: left;
     }
   }

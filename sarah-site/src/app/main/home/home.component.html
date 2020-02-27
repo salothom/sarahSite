@@ -1,16 +1,34 @@
-<div>
+<!-- <div> -->
   <div class="col-4 left-container">
-    <div>
-      <h1>Hello! I'm Sarah.</h1>
-    </div>
     <div class="row">
+      <h1 class="col-6-mobile">Hello! I'm Sarah.</h1>
+      <div class="desktop-hide col-4" style="text-align: right; padding-left: 25px;">
+        <img class="mobile-menu" (click)="mobileMenu()" alt="mobile Menu" src="../../../assets/hamBug.png" />
+      </div>
+      <div class="desktop-hide">
+        <div id="mobileNav" class="align-left mobile-submenu">
+          <div class="mobile-submenu-box">
+            <h2> <a (click)="updateView('About')" class="col-12 home-links">About</a></h2>
+            <h2> <a (click)="updateView('Music')" class="col-12 home-links">Music</a></h2>
+            <h2> <a (click)="updateView('Books')" class="col-12 home-links">Books</a></h2>
+            <h2> <a href="http://sarahloisthompson.com/react-site/" class="col-12 home-links">React</a></h2>
+            <h2> <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank"
+                class="col-12 home-links">Linkedin</a></h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row mobile-hide">
       <a (click)="updateView('About')" class="home-links">About</a>
       <a (click)="updateView('Music')" class="home-links">Music</a>
       <a (click)="updateView('Books')" class="home-links">Books</a>
       <a href="http://sarahloisthompson.com/react-site/" class="home-links">React Site</a>
       <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank" class="home-links">Linkedin</a>
+
     </div>
-    <div style="text-align: left; margin-top: 40px;">
+
+    <div class="mobile-hide left-container-sub">
       <div *ngIf="mainShow==='About'">
         I am a software developer living in Austin, Texas. Originally from the Chicago 'burbs, I got my undergrad from
         Indiana University's School of Infromatics and Computer Science then headed down to warmer weather. Check out
@@ -26,7 +44,34 @@
         <ol>
           <li>No books where the dog dies</li>
         </ol>
+
+
+        <div>
+          <div>
+            <h3 class=""> Genre Filter</h3>
+            <div class="col-6" *ngFor="let genre of genreList">
+              <div [ngStyle]="{'border':getColor(genre)}" (click)="filterGenre(genre)" class="">{{genre}}
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div *ngIf="filterByBooks.length>0">You are filtering by: </div>
+            <span class="row" *ngFor="let genrePick of filterByBooks">
+              {{genrePick}}
+            </span>
+          </div>
+
+
+          <p>From your filters are viewing {{filteredList.length}}/{{bookList.length}}</p>
+        </div>
+
+
       </div>
+
+
+
       <div *ngIf="mainShow==='Music'">
         <p>This list comes from personal challenge to listen to at least 150 albums in 2020 with “fresh ears”, to maybe
           write snippets of my
@@ -38,7 +83,7 @@
           simple question: “If you were going to make a list of albums that people should have listened to, what’s a
           couple albums that would be on your version?”.
         </p>
-        <div style="text-align: center" >
+        <div style="text-align: center">
           <div>Search Music:</div>
           <input placeholder="Search" style="padding: 5px; width: 50%" (keyup)="keySearch($event)">
         </div>
@@ -46,17 +91,37 @@
     </div>
 
   </div>
-  <div class="col-6 right-container">
+  <div class="col-12-mobile right-container">
     <div *ngIf="mainShow==='Books'">
-      <app-books></app-books>
+      <div *ngFor="let book of filteredList">
+        <div class="right-cards col-12">
+
+
+          <span class="align-center">
+            <h4>{{book.title}}</h4>
+          </span>
+          <div class="col-12-mobile">
+            <div>by {{book.author}} </div>
+            <div>Genre: {{book.genre}}</div>
+            <div>Year Published: {{book.published}}</div>
+            <div>Book # in Club's Selection: {{book.number}}</div>
+            <div>Read in Year: {{book.year}}</div>
+            <div class="desktop-hide"> Page Length: {{book.pages}}</div>
+
+          </div>
+          <div class="mobile-hide col-6 align-right">
+            <div> Page Length: {{book.pages}}</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div *ngIf="mainShow==='Music'">
 
       <div *ngFor="let album of filteredMusicList">
-        <div id={{album.order}} class="right-cards ">
+        <div id={{album.order}} class="right-cards col-12">
 
 
-          <h4 style="text-align: center;" class="col-12">
+          <h4 class="col-12 align-center">
             {{album.album}} - {{album.band}}
           </h4>
           <div class="col-12">
@@ -79,4 +144,4 @@
 
 
   </div>
-</div>
+<!-- </div> -->
