@@ -1,22 +1,25 @@
 <!-- <div> -->
 <div class="col-4 left-container">
   <div class="row">
-    <h1 class="col-6-mobile">Hello! I'm Sarah.</h1>
-    <div class="desktop-hide col-4" style="text-align: right; padding-left: 25px;">
+    <h1 class="col-9-mobile align-center"> Hello! I'm Sarah.</h1>
+    <div class="desktop-hide align-center col-3" >
       <img class="mobile-menu" (click)="mobileMenu()" alt="mobile Menu" src="assets/hamBug.png" />
     </div>
-    <div class="desktop-hide">
-      <div id="mobileNav" class="align-left mobile-submenu">
-        <div class="mobile-submenu-box">
-          <h2> <a (click)="updateView('About')" class="col-12 home-links">About</a></h2>
-          <h2> <a (click)="updateView('Music')" class="col-12 home-links">Music</a></h2>
-          <h2> <a (click)="updateView('Books')" class="col-12 home-links">Books</a></h2>
-          <h2> <a href="http://sarahloisthompson.com/react-site/" class="col-12 home-links">React</a></h2>
-          <h2> <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank"
-              class="col-12 home-links">Linkedin</a></h2>
-        </div>
+  </div>
+  <div class="desktop-hide">
+    <div (click)="mobileMenu()" id="greyMobileNav" class="greyOutMenu">
 
+    </div>
+    <div id="mobileNav" class="align-left mobile-submenu">
+      <div class="mobile-submenu-box">
+        <h2> <a (click)="updateView('About')" class="col-12 home-links">About</a></h2>
+        <h2> <a (click)="updateView('Music')" class="col-12 home-links">Music</a></h2>
+        <h2> <a (click)="updateView('Books')" class="col-12 home-links">Books</a></h2>
+        <h2> <a href="http://sarahloisthompson.com/react-site/" class="col-12 home-links">React</a></h2>
+        <h2> <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank"
+            class="col-12 home-links">Linkedin</a></h2>
       </div>
+
     </div>
   </div>
   <div class="row mobile-hide">
@@ -56,7 +59,8 @@
             <h3 class=""> Genre Filter</h3>
           </div>
           <div class="col-6">
-            <div  style="margin-top: 18.5px;" (click)="filterGenre('clear')" class="align-center buttonfilter">Clear Filters
+            <div style="margin-top: 18.5px;" (click)="filterGenre('clear')" class="align-center buttonfilter">Clear
+              Filters
             </div>
           </div>
         </div>

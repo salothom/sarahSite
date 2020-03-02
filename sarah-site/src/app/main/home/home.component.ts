@@ -37,11 +37,14 @@ export class HomeComponent implements OnInit {
   }
 
   mobileMenu() {
+    console.log("sdk");
     if (this.toggleMobile) {
       document.getElementById("mobileNav").style.width = "0%";
-      this.toggleMobile = false;
+      document.getElementById("greyMobileNav").style.width = "0%";
 
+      this.toggleMobile = false;
     } else {
+      document.getElementById("greyMobileNav").style.width = "100%";
       document.getElementById("mobileNav").style.width = "50%";
       this.toggleMobile = true;
     }
@@ -59,9 +62,6 @@ export class HomeComponent implements OnInit {
       d.genre.substring(0, keyLength).toLowerCase() === wordSearch ||
       d.score.toString().substring(0, keyLength).toLowerCase() === wordSearch ||
       d.year.toString().substring(0, keyLength).toLowerCase() === wordSearch ||
-
-      // d.secondaryGenre.substring(0, keyLength).toLowerCase() === wordSearch || 
-      // can't do this right now becuase it isn't on every object?
       d.band.substring(0, keyLength).toLowerCase() === wordSearch ||
       d.album.substring(0, keyLength).toLowerCase() === wordSearch);
 

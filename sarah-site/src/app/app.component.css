@@ -1,6 +1,11 @@
 
 /* Web Browser */
 
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 .left-container{
     text-align: center;
@@ -12,8 +17,9 @@
 
 }
 .left-container-sub{
+    /* position: fixed; */
     text-align: left;
-     margin-top: 40px;
+    margin-top: 40px;
 }
 .right-container{
     padding: 30px;
@@ -37,10 +43,21 @@
     width: 0%;
     height: 100vh;
     background-color: lightgray;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     float: right;
-   
-    margin-top: 8px;
+    /* margin-top: 8px; */
+}
+.greyOutMenu{
+    background-color: black;
+    opacity: 70%;
+    position: fixed;
+    z-index: -2;
+    float: right;
+    height: 100vh;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s;
+    position: fixed;
+    width: 0%
 }
 .mobile-submenu-box{
     padding: 15px;
@@ -104,7 +121,7 @@
       width: 100%;
       float: left;
   }
-.col-6-mobile{
+.col-9-mobile{
     width: 100%;
     float: left;
 }
@@ -154,9 +171,9 @@
 
     .left-container{
         text-align: left;
-        padding: 10px;
+        padding: 0px;
         width: 100vw;
-        height: 6%;
+        height: 52px;
         top: 0px;
         left: 0px;
 
@@ -183,8 +200,8 @@
         float: left;
     }
 
-    .col-6-mobile{
-        width: 50%;
+    .col-9-mobile{
+        width: 75%;
         float: left;
     }
   }
