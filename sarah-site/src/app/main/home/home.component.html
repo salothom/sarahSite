@@ -1,8 +1,8 @@
-<!-- <div> -->
+<!-- <div class="body-all"> -->
 <div class="col-4 left-container">
   <div class="row">
     <h1 class="col-9-mobile align-center"> Hello! I'm Sarah.</h1>
-    <div class="desktop-hide align-center col-3" >
+    <div class="desktop-hide align-center col-3">
       <img class="mobile-menu" (click)="mobileMenu()" alt="mobile Menu" src="assets/hamBug.png" />
     </div>
   </div>
@@ -39,7 +39,10 @@
         the books I've been reading or see the list of albums I'm attempting to work my way through this year. If you
         have any reccomendations on either, I'd truly love to hear them.
       </p>
-
+    <br>
+      <p>
+        All the art on this site I have created myself using the iconic program that is Window's '98 Paint.
+      </p>
     </div>
     <div *ngIf="mainShow==='Books'">
       <p>Established in 2017, Books & Booze is a community book club located in Austin, Texas.
@@ -101,34 +104,90 @@
       </p>
       <div style="text-align: center">
         <div>Search Music:</div>
-        <input placeholder="Search" style="padding: 5px; width: 50%" (keyup)="keySearch($event)">
+        <div class="searchOutside">
+          <input class="search" placeholder="Search" (keyup)="keySearch($event)">
+
+        </div>
         <div> Albums displayed: {{filteredMusicList.length}}</div>
       </div>
     </div>
   </div>
 
 </div>
-<div class="col-12-mobile right-container">
+<div class=" right-container">
+  <div *ngIf="mainShow==='About'">
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/beach.png" />
+    </div>
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/tiles.png" />
+    </div>
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/city.png" />
+    </div>
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/boat1.png" /></div>
+    <div class="desktop-hide">
+      <p>
+        I am a software developer living in Austin, Texas. Originally from the Chicago 'burbs, I got my undergrad from
+        Indiana University's School of Infromatics and Computer Science then headed down to warmer weather. Check out
+        the books I've been reading or see the list of albums I'm attempting to work my way through this year. If you
+        have any reccomendations on either, I'd truly love to hear them.
+      </p>
+      <br>
+      <p>
+        All the art on this site I have created myself using the iconic program that is Window's '98 Paint.
+      </p>
+    </div>
+
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/binary.png" />
+    </div>
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/guitar.png" />
+    </div>
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/book.png" /></div>
+    <div class="col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/desert.png" /></div>
+    <div class="mobile-hide col-3-mobile">
+      <img style="margin:10px;" class="col-9" src="assets/beach.png" />
+    </div>
+
+
+
+
+
+
+  </div>
   <div *ngIf="mainShow==='Books'">
     <div *ngFor="let book of filteredList">
       <div class="right-cards col-12">
 
 
         <span class="align-center">
-          <h4>{{book.title}}</h4>
+          <h4 class="right-card-header">{{book.title}}</h4>
         </span>
-        <div class="col-12-mobile">
-          <div>by {{book.author}} </div>
-          <div>Genre: {{book.genre}}</div>
-          <div>Year Published: {{book.published}}</div>
-          <div>Book # in Club's Selection: {{book.number}}</div>
-          <div>Read in Year: {{book.year}}</div>
-          <div class="desktop-hide"> Page Length: {{book.pages}}</div>
+        <div class="right-card-body">
+          <div style="padding-bottom: 7px;" class=" col-12-mobile">
+            <div>by {{book.author}} </div>
+            <div>Genre: {{book.genre}}</div>
+            <div>Year Published: {{book.published}}</div>
+            <div>Book # in Club's Selection: {{book.number}}</div>
+            <div>Read in Year: {{book.year}}</div>
+            <div class="desktop-hide"> Page Length: {{book.pages}}</div>
 
+          </div>
+          <div class="mobile-hide col-6 align-right">
+            <div> Page Length: {{book.pages}}</div>
+            <div class="bookBar col-8" >
+            <div class="bookBarCenter" [style.width.%]="book.pages/9" s></div>
+
+            </div>
+          </div>
         </div>
-        <div class="mobile-hide col-6 align-right">
-          <div> Page Length: {{book.pages}}</div>
-        </div>
+
+
       </div>
     </div>
   </div>
@@ -138,10 +197,10 @@
       <div id={{album.order}} class="right-cards col-12">
 
 
-        <h4 class="col-12 align-center">
+        <h4 class="right-card-header align-center">
           {{album.album}} - {{album.band}}
         </h4>
-        <div class="col-12">
+        <div class="right-card-body ">
           <div> Genre: {{album.genre}}<span *ngIf="album.secondaryGenre">, </span> {{album.secondaryGenre}}</div>
 
           <div>Released in year {{album.year}}</div>

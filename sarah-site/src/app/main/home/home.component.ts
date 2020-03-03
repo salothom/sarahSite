@@ -51,6 +51,11 @@ export class HomeComponent implements OnInit {
 
 
   }
+  setWidth(pages){
+    console.log("page", pages);
+
+    return 50;
+  }
 
   keySearch(event: any) {
 
