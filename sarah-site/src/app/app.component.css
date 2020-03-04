@@ -18,11 +18,19 @@ html, body {
 }
 .bookBar{
     float: right;
-            border: 2px solid #2c3531;
-            width: 80%;
+    border: 2px solid #2c3531;
+    height: 12px;
+    width: 80%;
+}
+.bookBarCenterImage{
+    background-image: linear-gradient(to right, #d1e8e2 , #116466, #2c3531);
+    padding: 6px;
 }
 .bookBarCenter{
-    background-color: #d1e8e2;
+    background-color: white;
+    position: relative;
+    top: -12px;
+    float: right;
     padding: 6px;
 }
 

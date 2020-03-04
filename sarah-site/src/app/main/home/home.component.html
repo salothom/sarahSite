@@ -181,8 +181,9 @@
           <div class="mobile-hide col-6 align-right">
             <div> Page Length: {{book.pages}}</div>
             <div class="bookBar col-8" >
-            <div class="bookBarCenter" [style.width.%]="book.pages/9" s></div>
-
+            <div class="bookBarCenterImage"></div>
+            <div *ngIf="book.pages>100" class="bookBarCenter" [style.width.%]="100-(book.pages/9)" ></div>
+            <div *ngIf="book.pages<101" class="bookBarCenter" [style.width.%]="92" ></div>
             </div>
           </div>
         </div>
