@@ -39,7 +39,7 @@
         the books I've been reading or see the list of albums I'm attempting to work my way through this year. If you
         have any reccomendations on either, I'd truly love to hear them.
       </p>
-    <br>
+      <br>
       <p>
         All the art on this site I have created myself using the iconic program that is Window's '98 Paint.
       </p>
@@ -180,15 +180,22 @@
           </div>
           <div class="mobile-hide col-6 align-right">
             <div> Page Length: {{book.pages}}</div>
-            <div class="bookBar col-8" >
-            <div class="bookBarCenterImage"></div>
-            <div *ngIf="book.pages>100" class="bookBarCenter" [style.width.%]="100-(book.pages/9)" ></div>
-            <div *ngIf="book.pages<101" class="bookBarCenter" [style.width.%]="92" ></div>
+            <div class="bookBar col-8">
+              <div class="bookBarCenterImage"></div>
+              <div *ngIf="book.pages>100" class="bookBarCenter" [style.width.%]="100-(book.pages/9)"></div>
+              <div *ngIf="101>book.pages" class="bookBarCenter" [style.width.%]="92"></div>
             </div>
+            <div class="bookLength" *ngIf="101>book.pages">V Short</div>
+            <div class="bookLength" *ngIf="215>book.pages && book.pages>100">Brief</div>
+            <div class="bookLength" *ngIf="350>book.pages && book.pages>214">Short</div>
+            <div class="bookLength" *ngIf="450>book.pages && book.pages>349">Medium</div>
+            <div class="bookLength" *ngIf="600>book.pages && book.pages>449">Long-ish</div>
+            <div class="bookLength" *ngIf="750>book.pages && book.pages>599">Longer</div>
+            <div class="bookLength" *ngIf="850>book.pages && book.pages>749">Jeez</div>
+            <div class="bookLength" *ngIf="book.pages>849">Oouf</div>
+
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
