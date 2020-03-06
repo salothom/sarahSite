@@ -169,13 +169,27 @@
           <h4 class="right-card-header">{{book.title}}</h4>
         </span>
         <div class="right-card-body">
-          <div style="padding-bottom: 7px;" class=" col-12-mobile">
+          <div style="padding-bottom: 7px;" class="col-full-mobile">
             <div>by {{book.author}} </div>
             <div>Genre: {{book.genre}}</div>
             <div>Year Published: {{book.published}}</div>
             <div>Book # in Club's Selection: {{book.number}}</div>
             <div>Read in Year: {{book.year}}</div>
-            <div class="desktop-hide"> Page Length: {{book.pages}}</div>
+            <span class="desktop-hide">
+              <div class="bookLength" *ngIf="101>book.pages">Page Length: {{book.pages}} - V Short</div>
+              <div class="bookLength" *ngIf="215>book.pages && book.pages>100">Page Length: {{book.pages}} - Brief</div>
+              <div class="bookLength" *ngIf="350>book.pages && book.pages>214">Page Length: {{book.pages}} - Short</div>
+              <div class="bookLength" *ngIf="450>book.pages && book.pages>349">Page Length: {{book.pages}} - Medium</div>
+              <div class="bookLength" *ngIf="600>book.pages && book.pages>449">Page Length: {{book.pages}} - Long-ish</div>
+              <div class="bookLength" *ngIf="750>book.pages && book.pages>599">Page Length: {{book.pages}} - Longer</div>
+              <div class="bookLength" *ngIf="850>book.pages && book.pages>749">Page Length: {{book.pages}} - Jeez</div>
+              <div class="bookLength" *ngIf="book.pages>849">Page Length: {{book.pages}} - Oouf</div>
+              <div class="bookBar col-12">
+                <div class="bookBarCenterImage"></div>
+                <div *ngIf="book.pages>100" class="bookBarCenter" [style.width.%]="100-(book.pages/9)"></div>
+                <div *ngIf="101>book.pages" class="bookBarCenter" [style.width.%]="92"></div>
+              </div>
+            </span>
 
           </div>
           <div class="mobile-hide col-6 align-right">

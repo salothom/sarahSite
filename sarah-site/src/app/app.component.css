@@ -206,6 +206,10 @@ margin: 5px;
     width: 50%;
     float: left;
 }
+.col-full-mobile{
+    width: 50%;
+    float: left;
+}
   
   /* Clear floats after the columns */
 .row:after {
@@ -255,8 +259,17 @@ margin: 5px;
         height: 52px;
         top: 0px;
         left: 0px;
-
     }
+    .right-card-body{
+          padding-right: 0px;
+    }
+
+    .bookLength{
+     margin-top: 0px; 
+
+     margin-left: 0px;
+    }
+  
     .right-container{
         margin-left: 5%;
         padding-left: 5px;
@@ -277,6 +290,11 @@ margin: 5px;
     }
 
     .col-12-mobile{
+        width: 90%;
+        float: left;
+    }
+
+    .col-full-mobile{
         width: 90%;
         float: left;
     }
