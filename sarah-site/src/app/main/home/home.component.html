@@ -19,7 +19,6 @@
         <h2> <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank"
             class="col-12 home-links">Linkedin</a></h2>
       </div>
-
     </div>
   </div>
   <div class="row mobile-hide">
@@ -177,9 +176,12 @@
               <div class="bookLength" *ngIf="101>book.pages">Page Length: {{book.pages}} - V Short</div>
               <div class="bookLength" *ngIf="215>book.pages && book.pages>100">Page Length: {{book.pages}} - Brief</div>
               <div class="bookLength" *ngIf="350>book.pages && book.pages>214">Page Length: {{book.pages}} - Short</div>
-              <div class="bookLength" *ngIf="450>book.pages && book.pages>349">Page Length: {{book.pages}} - Medium</div>
-              <div class="bookLength" *ngIf="600>book.pages && book.pages>449">Page Length: {{book.pages}} - Long-ish</div>
-              <div class="bookLength" *ngIf="750>book.pages && book.pages>599">Page Length: {{book.pages}} - Longer</div>
+              <div class="bookLength" *ngIf="450>book.pages && book.pages>349">Page Length: {{book.pages}} - Medium
+              </div>
+              <div class="bookLength" *ngIf="600>book.pages && book.pages>449">Page Length: {{book.pages}} - Long-ish
+              </div>
+              <div class="bookLength" *ngIf="750>book.pages && book.pages>599">Page Length: {{book.pages}} - Longer
+              </div>
               <div class="bookLength" *ngIf="850>book.pages && book.pages>749">Page Length: {{book.pages}} - Jeez</div>
               <div class="bookLength" *ngIf="book.pages>849">Page Length: {{book.pages}} - Oouf</div>
               <div class="bookBar col-12">
