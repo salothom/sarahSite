@@ -386,6 +386,19 @@
                 "Historical Fiction"
             ],
             "selector": "Tim Cavell"
+        },
+        {
+            "title": "Daisy Jones and the 6",
+            "author": "Taylor Jenkins Reid",
+            "year": "2020",
+            "number": "30",
+            "pages": "333",
+            "published": "2019",
+            "genre": [
+                "Novel",
+                "Music"
+            ],
+            "selector": "Allison Cleere"
         }
     ]
 }

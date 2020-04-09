@@ -173,6 +173,7 @@
             <div>Book # in Club's Selection: {{book.number}}</div>
             <div>Read in Year: {{book.year}}</div>
             <span class="desktop-hide">
+              
               <div class="bookLength" *ngIf="101>book.pages">Page Length: {{book.pages}} - V Short</div>
               <div class="bookLength" *ngIf="215>book.pages && book.pages>100">Page Length: {{book.pages}} - Brief</div>
               <div class="bookLength" *ngIf="350>book.pages && book.pages>214">Page Length: {{book.pages}} - Short</div>
