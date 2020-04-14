@@ -66,6 +66,8 @@ export class HomeComponent implements OnInit {
     this.filteredMusicList = this.musicList.filter(d =>
       d.genre.substring(0, keyLength).toLowerCase() === wordSearch ||
       d.score.toString().substring(0, keyLength).toLowerCase() === wordSearch ||
+      d.score.toString().substring(0, keyLength).toLowerCase()+"/7" === wordSearch ||
+
       d.year.toString().substring(0, keyLength).toLowerCase() === wordSearch ||
       d.band.substring(0, keyLength).toLowerCase() === wordSearch ||
       d.album.substring(0, keyLength).toLowerCase() === wordSearch);

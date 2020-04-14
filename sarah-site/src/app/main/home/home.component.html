@@ -15,7 +15,7 @@
         <h2> <a (click)="updateView('About')" class="col-12 home-links">About</a></h2>
         <h2> <a (click)="updateView('Music')" class="col-12 home-links">Music</a></h2>
         <h2> <a (click)="updateView('Books')" class="col-12 home-links">Books</a></h2>
-        <h2> <a href="http://sarahloisthompson.com/react-site/" class="col-12 home-links">React</a></h2>
+        <h2> <a href="http://sarahloisthompson.com/" class="col-12 home-links">Home</a></h2>
         <h2> <a href="https://www.linkedin.com/in/sarahthompson3/" target="_blank"
             class="col-12 home-links">Linkedin</a></h2>
       </div>
@@ -230,14 +230,17 @@
           <div *ngIf="album.quote">
             Song Quote: {{album.quote}}
           </div>
-          <div *ngIf="album.review">
+          <!-- <div *ngIf="album.review">
             {{album.review}}
-          </div>
+          </div> -->
           <div *ngIf="album.score">
             Score: {{album.score}}/7
           </div>
         </div>
       </div>
     </div>
+    <div *ngIf="filteredMusicList.length===0">
+      <img style="margin:10px;" class="col-9" src="assets/desert.png" /></div>
+   
   </div>
 </div>

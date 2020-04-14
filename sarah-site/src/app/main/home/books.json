@@ -399,6 +399,19 @@
                 "Music"
             ],
             "selector": "Allison Cleere"
+        },  
+       
+        {
+            "title": " The Liar's Daughter",
+            "author": "Megan Cooley Peterson",
+            "year": "2020",
+            "number": "31",
+            "pages": "288",
+            "published": "2019",
+            "genre": [
+                "Fiction", "Thriller", "Suspense"
+            ],
+            "selector": "Allison Cleere"
         }
     ]
 }
