@@ -402,16 +402,29 @@
         },  
        
         {
-            "title": " The Liar's Daughter",
+            "title": "The Liar's Daughter",
             "author": "Megan Cooley Peterson",
             "year": "2020",
             "number": "31",
-            "pages": "288",
+            "pages": "180",
             "published": "2019",
             "genre": [
-                "Fiction", "Thriller", "Suspense"
+                "Fiction", "Cults", "Suspense"
             ],
-            "selector": "Allison Cleere"
+            "selector": "Sarah Parzyck"
+        },  
+       
+        {
+            "title": "The Ballad of Black Tom",
+            "author": "Victor LaValle",
+            "year": "2020",
+            "number": "32",
+            "pages": "150",
+            "published": "2016",
+            "genre": [
+                "Fiction", "Thriller", "Horrow"
+            ],
+            "selector": "David Garcia"
         }
     ]
 }
